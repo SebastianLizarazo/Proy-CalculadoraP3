@@ -1,5 +1,7 @@
 package co.edu.uptc.presentacion.GUI;
 
+import co.edu.uptc.logica.Handling;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -60,15 +62,8 @@ public class CalculatorGUI extends JFrame implements ActionListener {
     }
 
     private double evaluateExpression(String expression) {
-        // Aquí deberías implementar la lógica para evaluar la expresión matemática
-        // Puedes utilizar la clase ScriptEngine, por ejemplo
-        // En este ejemplo, se devuelve un valor aleatorio para fines demostrativos
-        return Math.random() * 100;
+        Handling<String> expressionToEvaluate = new Handling<>();
+        return expressionToEvaluate.arrangeExpression(expression);
     }
 
-    /*
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new CalculatorGUI());
-    }
-    */
 }
