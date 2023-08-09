@@ -36,6 +36,8 @@ public class GUICalculator extends JFrame {
         buttonPanel.setLayout(new GridLayout(5, 5));
         for (String text : buttons) {
             JButton button = new JButton(text);
+            Font nuevaFuente = new Font("Arial", Font.PLAIN, 20);
+            button.setFont(nuevaFuente);
             button.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
