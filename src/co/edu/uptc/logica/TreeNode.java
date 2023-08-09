@@ -1,14 +1,15 @@
 package co.edu.uptc.logica;
 
 public class TreeNode <T>{
+
     private T info;
 
     private TreeNode<T> left;
-    private TreeNode<T> rigth;
+    private TreeNode<T> right;
 
-    public TreeNode(T info){
+    public TreeNode(T info) {
         this.info = info;
-        left = rigth=null;
+        left = right = null;
     }
 
     public T getInfo() {
@@ -27,11 +28,11 @@ public class TreeNode <T>{
         this.left = left;
     }
 
-    public TreeNode<T> getRigth() {
-        return rigth;
+    public TreeNode<T> getRight() {
+        return right;
     }
 
-    public void setRigth(TreeNode<T> rigth) {
-        this.rigth = rigth;
+    public void setRight(TreeNode<T> right) {
+        this.right = right;
     }
 }
